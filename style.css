@@ -1,127 +1,154 @@
-/* Reset the default styles */
-* {
+/* Global styles */
+
+/* Set the default font family */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
   }
   
-  /* Set the background and text color */
-  body {
-    background-color: #1D1D1D;
-    color: #ECECEC;
-    font-family: "Open Sans", sans-serif;
-  }
-  
-  /* Add a cool gradient background to the header */
-  header {
-    background: linear-gradient(to bottom right, #5B5F97, #9B93C9);
-    padding: 20px;
-    position: relative;
-  }
-  
-  /* Style the logo with a cool gradient border */
-  .logo {
-    font-size: 40px;
-    font-weight: bold;
-    color: #FFF;
+  /* Set the link color and remove the underline */
+  a {
+    color: #333;
     text-decoration: none;
-    border: 5px solid #FFF;
-    border-radius: 50%;
-    padding: 10px;
+  }
+  
+  /* Set the hover color for links */
+  a:hover {
+    color: #666;
+  }
+  
+  /* Set the style for headings */
+  h1, h2, h3 {
+    font-weight: normal;
+    color: #333;
+  }
+  
+  /* Set the style for the header */
+  header {
+    background-color: #fff;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+  }
+  
+  /* Set the style for the logo */
+  header h1 {
     display: inline-block;
-    position: relative;
-    z-index: 1;
+    margin: 0;
   }
   
-  .logo::after {
-    content: "";
-    position: absolute;
-    top: -10px;
-    left: -10px;
-    right: -10px;
-    bottom: -10px;
-    z-index: -1;
-    background: linear-gradient(to bottom right, #9B93C9, #5B5F97);
-    border-radius: 50%;
+  /* Set the style for the navigation */
+  nav {
+    display: inline-block;
+    float: right;
+    margin: 0;
   }
   
-  /* Style the navigation links with a cool underline effect */
+  /* Set the style for the navigation links */
   nav ul {
     list-style: none;
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: 0;
+    padding: 0;
   }
   
-  nav li {
+  nav ul li {
+    display: inline-block;
     margin-right: 20px;
   }
   
-  nav a {
-    color: #FFF;
-    text-decoration: none;
-    font-size: 20px;
-    position: relative;
-    padding-bottom: 5px;
-    transition: all 0.2s ease-in-out;
+  nav ul li:last-child {
+    margin-right: 0;
   }
   
-  nav a::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: #FFF;
-    transition: all 0.2s ease-in-out;
-  }
-  
-  nav a:hover {
-    color: #9B93C9;
-  }
-  
-  nav a:hover::after {
-    width: 100%;
-  }
-  
-  /* Style the main content area with a cool grid layout */
-  main {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
-    }
-    
-    /* Style the individual article cards */
-    article {
-    background-color: #FFF;
-    color: #1D1D1D;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
-    }
-    
-    article h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-    }
-    
-    article p {
-    font-size: 16px;
-    line-height: 1.5;
-    margin-bottom: 20px;
-    }
-    
-    article a {
-    color: #5B5F97;
-    text-decoration: none;
+  nav ul li a {
     font-weight: bold;
-    }
-    
-    article a:hover {
-    text-decoration: underline;
-    }
+  }
+  
+  /* Set the style for the main content */
+  main {
+    margin-top: 100px;
+    padding: 20px;
+  }
+  
+  /* Set the style for the sections */
+  section {
+    margin-bottom: 50px;
+  }
+  
+  /* Set the style for the section headings */
+  section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Set the style for the projects */
+  #projects ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  #projects li {
+    background-color: #f3f3f3;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    flex-basis: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+  
+  #projects li h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  /* Set the style for the skills */
+  #skills ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #skills li {
+    margin-bottom: 10px;
+  }
+  
+  /* Set the style for the form */
+  form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  
+  form label {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  form input[type="text"],
+  form input[type="email"],
+  form textarea {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  
+  form textarea {
+    height: 100px;
+  }
+  
+  form input[type="submit"] {
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 10px 20px;
+  }
