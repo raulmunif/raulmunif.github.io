@@ -1,53 +1,83 @@
-/* Set the background color of the entire page */
-body {
-    background-image: linearGradient(#ff0707, #4444dd);
-}
-  
-  /* Center the content in the middle of the page */
-  .container {
-    width: 80%;
-    margin: 0 auto;
+/* Reset the default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
   
-  /* Style the page header */
+  /* Set the background and text color */
+  body {
+    background-color: #0B0C10;
+    color: #FFF;
+    font-family: "Helvetica Neue", sans-serif;
+  }
+  
+  /* Add a gradient background to the header */
   header {
-    background-color: #333;
-    color: #fff;
+    background: linear-gradient(to right, #1F2833, #C5C6C7);
     padding: 20px;
   }
   
-  /* Style the page footer */
-  footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
+  /* Style the logo */
+  .logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: #FFF;
+    text-decoration: none;
+  }
+  
+  /* Style the navigation links */
+  nav ul {
+    list-style: none;
+    margin-top: 10px;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  nav a {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 20px;
   }
   
   /* Style the main content area */
   main {
+    max-width: 800px;
+    margin: 0 auto;
     padding: 20px;
   }
   
-  /* Style the main heading */
   h1 {
     font-size: 36px;
     margin-bottom: 20px;
   }
   
-  /* Style the paragraph text */
   p {
     font-size: 18px;
     line-height: 1.5;
     margin-bottom: 20px;
   }
   
-  /* Style the links */
+  /* Add some cool effects to links */
   a {
-    color: #333;
+    color: #F44336;
     text-decoration: none;
+    transition: all 0.2s ease-in-out;
   }
   
   a:hover {
+    color: #FFF;
     text-decoration: underline;
+  }
+  
+  /* Style the footer */
+  footer {
+    background-color: #1F2833;
+    color: #FFF;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
   }

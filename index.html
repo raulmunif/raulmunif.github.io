@@ -1,46 +1,66 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Raul Munif's Website</title>
-    <style>
-      /* Snazzy CSS styles go here */
-      body {
-        background-color: #717171;
-        color: #4a4747;
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-      }
-
-      header {
-        background-color: #333;
-        color: #fff;
-        padding: 20px;
-        text-align: center;
-      }
-
-      h1 {
-        font-size: 48px;
-        margin-top: 0;
-      }
-
-      p {
-        font-size: 24px;
-        line-height: 1.5;
-        margin-bottom: 20px;
-        text-align: center;
-      }
-
-    </style>
-  </head>
-  <body>
-    <header>
-      <h1>Welcome to my Website</h1>
-    </header>
-    <main>
-      <p>This website will have heaps of cool things in the future!!</p>
-      <p>There's more to come!</p>
-    </main>
-  </body>
+<head>
+	<title>Personal Project Website</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>Personal Project Website</h1>
+		<nav>
+			<ul>
+				<li><a href="#about">About</a></li>
+				<li><a href="#projects">Projects</a></li>
+				<li><a href="#skills">Skills</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section id="about">
+			<h2>About Me</h2>
+			<p>Hi, my name is Raul and I'm a 2nd year Commerce / Computer Science student at UNSW. I have a passion for programming and love working on new projects.</p>
+		</section>
+		<section id="projects">
+			<h2>Projects</h2>
+			<ul>
+				<li>
+					<h3>Project 1</h3>
+					<p>Description of project 1.</p>
+				</li>
+				<li>
+					<h3>Project 2</h3>
+					<p>Description of project 2.</p>
+				</li>
+				<li>
+					<h3>Project 3</h3>
+					<p>Description of project 3.</p>
+				</li>
+			</ul>
+		</section>
+		<section id="skills">
+			<h2>Skills</h2>
+			<ul>
+				<li>Programming Languages: JavaScript, Python, C</li>
+				<li>Web Development: HTML, CSS, JavaScript</li>
+				<li>Database Management: MySQL, Oracle</li>
+			</ul>
+		</section>
+		<section id="contact">
+			<h2>Contact Me</h2>
+			<form>
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name" required>
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required>
+				<label for="message">Message:</label>
+				<textarea id="message" name="message" required></textarea>
+				<input type="submit" value="Send">
+			</form>
+		</section>
+	</main>
+	<footer>
+		<p>&copy; 2023 Raul Munif</p>
+	</footer>
+</body>
 </html>
