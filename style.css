@@ -44,7 +44,6 @@ body {
   /* Set the style for the navigation */
   nav {
     display: inline-block;
-    float: right;
     margin: 0;
   }
   
