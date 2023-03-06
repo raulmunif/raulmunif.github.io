@@ -1,0 +1,53 @@
+/* Set the background color of the entire page */
+body {
+    background-color: #f1f1f1;
+  }
+  
+  /* Center the content in the middle of the page */
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  /* Style the page header */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  /* Style the page footer */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Style the main content area */
+  main {
+    padding: 20px;
+  }
+  
+  /* Style the main heading */
+  h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  /* Style the paragraph text */
+  p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  /* Style the links */
+  a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
