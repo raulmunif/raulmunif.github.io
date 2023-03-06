@@ -1,7 +1,7 @@
 /* Set the background color of the entire page */
 body {
-    background-color: #f1f1f1;
-  }
+    background-image: linearGradient(#ff0707, #4444dd);
+}
   
   /* Center the content in the middle of the page */
   .container {
