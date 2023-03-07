@@ -5,6 +5,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
+    background-image: linear-gradient(#b7b7b7,white);
   }
   
   /* Set the link color and remove the underline */
