@@ -43,7 +43,9 @@ body {
   
   /* Set the style for the navigation */
   nav {
-    display: inline-block;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
     margin: 0;
   }
   
