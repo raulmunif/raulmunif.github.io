@@ -1,163 +1,186 @@
-/* Global styles */
-
-/* Set the default font family */
+html{
+  scroll-behavior: smooth;
+}
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #efddf6;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-  }
-  
-  /* Set the link color and remove the underline */
-  a {
-    color: #333;
-    text-decoration: none;
-  }
-  
-  /* Set the hover color for links */
-  a:hover {
-    color: #c86be7;
-  }
-  
-  /* Set the style for headings */
-  h1, h2, h3 {
-    font-weight: normal;
-    color: #333;
-  }
-  
-  /* Set the style for the header */
-  header {
-    background-color: #b7b7b7;
-    padding: 20px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 50px;
-    z-index: 100;
-  }
-  
-  /* Set the style for the logo */
-  header h1 {
-    display: inline-block;
-    margin: 0;
-  }
-  
-  li {
-    float: left;
-  }
+  margin: 0px;
+  padding: 0;
+  height: 200px;
+  align-items: center;
+  display: flex;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: #1c1c1c;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #313131;
+  overflow: hidden;
+  transition: height 0.3s;
+  text-align: center;
+  line-height: 4px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.35);
+}
+.header nav{
+  /* This controls the size of the pre shrink nav bar --> 40px seems good */
+  height: 45px;
+  font-size: 35px;
+  font-weight: normal;
+  transition: smooth;
+}
 
-  /* Set the style for the navigation */
-  nav {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-evenly; 
-    font-size: 35px;
-  }
+.header.shrink{
+  /* This controls the size of the post shrink nav bar --> 40px seems good */
+  height: 35px;
+}
 
-  /* Set the style for the navigation links */
-  nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav ul li {
-    display: flex;
-    margin-right: 70px;
-  }
-  
-  nav ul li:last-child {
-    margin-right: 0;
-  }
-  
-  nav ul li a {
-    font-weight: bold;
-  }
-  
-  /* Set the style for the main content */
-  main {
-    margin-top: 50px;
-    padding: 20px;
-  }
-  
-  /* Set the style for the sections */
-  section {
-    margin-bottom: 50px;
-  }
-  
-  /* Set the style for the section headings */
-  section h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  /* Set the style for the projects */
-  #projects ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  
-  #projects li {
-    background-color: #b7b7b7;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    flex-basis: calc(33.33% - 20px);
-    margin-bottom: 20px;
-    padding: 20px;
-  }
-  
-  #projects li h3 {
-    font-size: 20px;
-    margin-bottom: 10px;
-  }
-  
-  /* Set the style for the skills */
-  #skills ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  #skills li {
-    margin-bottom: 10px;
-  }
-  
-  /* Set the style for the form */
-  form {
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-  }
-  
-  form label {
-    font-size: 18px;
-    margin-bottom: 5px;
-  }
-  
-  form input[type="text"],
-  form input[type="email"],
-  form textarea {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-    margin-bottom: 10px;
-    padding: 10px;
-  }
-  
-  form textarea {
-    height: 100px;
-  }
-  
-  form input[type="submit"] {
-    background-color: #333;
-    border: none;
-    border-radius: 5px;
-    color: #fff;
-    cursor: pointer;
-    font-size: 18px;
-    padding: 10px 20px;
-  }
+.header.shrink nav {
+  font-size: 20px;
+}
+
+.header nav:hover{
+  font-size: 35px;
+}
+
+.header.shrink:hover{
+  height: 65px;
+}
+
+nav ul li {
+  display: inline;
+  margin: 2px 15px;
+  padding: 40px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: aliceblue;
+  transition: .5s;
+}
+nav ul li a:hover{
+  color: #000000;
+}
+
+
+.container{
+  justify-items: center;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  width: 100%;
+  height: auto;
+  margin-top: 2050px;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  overflow: hidden;
+}
+
+
+.Item{
+  background-color: #313131;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.35);
+  border: solid 5px rgb(30, 30, 30);
+  border-radius: 10px;
+  height: auto;
+  width: 100%;
+  color: white;
+  text-align: center;
+  font-size: 32px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 10px;    
+  padding-right: 10px;
+  transition: letter-spacing 8s;
+  letter-spacing: 0rem;
+  padding: 50px 10px;
+  transform-origin: center bottom;
+  margin-top: 50px;
+
+}
+
+
+.Item:hover {
+  /* New styles for hover effect */
+  transform: scale(1.3);
+  transform: translateY(-50px);
+  margin-top: 50px;
+  transition: 1s;
+  letter-spacing: 0.01rem;
+  box-shadow: 0px 4px 10px rgba(67, 67, 67, 0.35);
+  z-index: auto;
+}
+
+.Item:not(:hover) {
+  transform: scale(0.9);
+  transition: 0.6s;
+  opacity: 0.8;
+}
+
+
+.Title{
+  margin-top: 150px;
+  border:solid 1px rgba(255, 255, 255, 0);
+  width: 100%;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  font-size: 100px;
+  font-weight: normal;
+}
+
+
+.projects{
+  font-size: 100px;
+  color: white;
+  text-align: center;
+  position: absolute;
+  display: block;
+  margin-top: 6000px;
+  padding-top: 100px;
+  padding-bottom: 400px;
+  margin-bottom: 400px;
+  width: 100%;
+}
+
+.about{
+  font-size: 100px;
+  color: white;
+  text-align: center;
+  position: absolute;
+  display: block;
+  margin-top: 10000px;
+  margin-bottom: 400px;
+  padding-top: 100px;
+  padding-bottom: 400px;
+  width: 100%;
+}
+
+.blog{
+  font-size: 100px;
+  color: white;
+  text-align: center;
+  position: absolute;
+  display: block;
+  margin-top: 14000px;
+  padding-bottom: 400px;
+  padding-top: 100px;
+  margin-bottom: 400px;
+  width: 100%;
+}
+
+
+.contact{
+  font-size: 100px;
+  color: white;
+  text-align: center;
+  position: absolute;
+  display: block;
+  margin-top: 18000px;
+  padding-bottom: 400px;
+  padding-top: 100px;
+  margin-bottom: 400px;
+  width: 100%;
+}
+
