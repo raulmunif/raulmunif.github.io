@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = "stylesheet" href="style.css">
-    <title>Raul's Website</title>
+    <title>Raul's Personal Website</title>
+	<link rel="icon" type="image/png" href="Images/favicon-32x32.png">
 </head>
 <body>
     <div class = "header">
@@ -22,21 +23,47 @@
         </nav>
     </div>
 
-    <div id="Home"></div>
-    <div class = "Title">
-        Welcome to my website!
-    </div>
 
 
+
+    <div id="Home">
+
+	</div>
+
+
+	<div class="projImg" id="projImg">
+		<img src="Images/BgroundImg.png" alt="Project Image">
+		<div class="intro-overlay"></div>
+		<div class="intro-content">
+			<span class="txt-rotate" data-period="2000" data-rotate='["Hi", "Hello", "Welcome", "Greetings", "Salutations", "Hola", "Bonjour", "Hey"]'></span>
+			<h1>my name is Raul</h1>
+			<p class="journey-text">Thanks for checking out my website, I'd love to <a href="https://www.linkedin.com/in/raul-munif/">connect</a> with you.</p>
+			<div class="social-icons">
+				<a href="https://www.linkedin.com/in/raul-munif/" target="_blank"><img src="https://simpleicons.org/icons/linkedin.svg" alt="LinkedIn"></a>
+				<a href="https://github.com/raulmunif " target="_blank"><img src="https://simpleicons.org/icons/github.svg" alt="GitHub"></a>
+			  <a href="mailto:raulmunif34@gmail.com"><img src="https://simpleicons.org/icons/gmail.svg" alt="Email"></a>
+			</div>
+		</div>
+	</div>
 
 
     <div class="about" id="About">
-        ABOUT
-    </div>
+
+		<p>I'm Raul, a second-year Commerce/Computer Science student at the University of New South Wales.</p>
+		<p>When I'm not diving into the intriguing world of algorithms or working on my own projects, you'll probably find me juggling coffee cups while deciphering the secrets of the universe (or at least attempting to). </p>
+		<p>Check out more about my academic journey over at my <a href="https://www.linkedin.com/in/raul-munif/">LinkedIn</a>.</p>
+
+
+	</div>
 
 	<div class="projects" id="Projects">
         Projects
-    </div>
+		<p><br><br>Exciting things are brewing in my project laboratory!
+			While I'm busy concocting something truly remarkable, I invite you to keep an eagle eye out for what's to come.<br>
+			Trust me, it'll be worth the wait!<br><br>
+			Coming soon, so keep those curious eyes peeled and get ready to embark on a journey that will leave you in awe!</p>
+
+	</div>
 
     <div class="blog" id="Blog">
         Blog
@@ -47,7 +74,59 @@
     </div>
 
 
+	<script type = "text/javascript">
+		var TxtRotate = function(el, toRotate, period) {
+			this.toRotate = toRotate;
+			this.el = el;
+			this.loopNum = 0;
+			this.period = parseInt(period, 2) || 1000;
+			this.txt = '';
+			this.tick();
+			this.isDeleting = false;
+		  };
 
+		  TxtRotate.prototype.tick = function() {
+			var i = this.loopNum % this.toRotate.length;
+			var fullTxt = this.toRotate[i];
+			if (this.isDeleting) {
+			  this.txt = fullTxt.substring(0, this.txt.length - 1);
+			} else {
+			  this.txt = fullTxt.substring(0, this.txt.length + 1);
+			}
+			this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+			var that = this;
+			var delta = 300 - Math.random() * 100;
+			if (this.isDeleting) { delta /= 2; }
+
+			if (!this.isDeleting && this.txt === fullTxt) {
+			  delta = this.period;
+			  this.isDeleting = true;
+			} else if (this.isDeleting && this.txt === '') {
+			  this.isDeleting = false;
+			  this.loopNum++;
+			  delta = 500;
+			}
+			setTimeout(function() {
+			  that.tick();
+			}, delta);
+		  };
+
+		  window.onload = function() {
+			var elements = document.getElementsByClassName('txt-rotate');
+			for (var i=0; i<elements.length; i++) {
+			  var toRotate = elements[i].getAttribute('data-rotate');
+			  var period = elements[i].getAttribute('data-period');
+			  if (toRotate) {
+				new TxtRotate(elements[i], JSON.parse(toRotate), period);
+			  }
+			}
+			// INJECT CSS
+			var css = document.createElement("style");
+			css.type = "text/css";
+			css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+			document.body.appendChild(css);
+		  };
+	</script>
 
 
     <script type = "text/javascript">
