@@ -131,31 +131,32 @@ nav ul li a:hover{
 }
 
 
-.projects{
-  font-size: 100px;
-  color: white;
-  text-align: center;
-  position: absolute;
-  display: block;
-  margin-top: 6000px;
-  padding-top: 100px;
-  padding-bottom: 400px;
-  margin-bottom: 400px;
-  width: 100%;
-}
-
 .about{
   font-size: 100px;
   color: white;
   text-align: center;
   position: absolute;
   display: block;
-  margin-top: 10000px;
+  margin-top: 6000px;
   margin-bottom: 400px;
   padding-top: 100px;
   padding-bottom: 400px;
   width: 100%;
 }
+
+.projects{
+  font-size: 100px;
+  color: white;
+  text-align: center;
+  position: absolute;
+  display: block;
+  margin-top: 10000px;
+  padding-top: 100px;
+  padding-bottom: 400px;
+  margin-bottom: 400px;
+  width: 100%;
+}
+
 
 .blog{
   font-size: 100px;
