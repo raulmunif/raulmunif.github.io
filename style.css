@@ -222,6 +222,24 @@ nav ul li a:hover {
   font-size: 15px;
 }
 
+.photo-creds {
+  transform: translateY(600px);
+  opacity: 0.15;
+  cursor: pointer;
+}
+
+.hidden-text {
+  visibility: hidden;
+  transition: opacity 0.8s;
+  position: absolute;
+  top: 20px;
+  z-index: 1;
+  padding-top: 20px;
+  white-space: nowrap;
+}
+
+
+
 
 .about {
   font-size: 100px;
