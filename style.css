@@ -101,13 +101,23 @@ nav ul li a:hover {
   width: 100%;
   color: white;
   text-align: center;
-  font-size: 32px;
-  padding: 50px 10px;
+  font-size: 24px; /* Decreased font size */
+  padding: 40px 10px; /* Decreased padding */
   transition: letter-spacing 8s;
   letter-spacing: 0rem;
   transform-origin: center bottom;
   margin-top: 50px;
+  font-weight: normal; /* Removed bold font weight */
 }
+
+.Item:hover {
+  /* Rest of the code */
+}
+
+.Item:not(:hover) {
+  /* Rest of the code */
+}
+
 
 .Item:hover {
   /* New styles for hover effect */
@@ -302,3 +312,42 @@ nav ul li a:hover {
   /* Add more styles as needed */
 }
 
+.loading:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  border: 5px solid rgba(255, 255, 255, 0.2);
+  border-top-color: #ffffff;
+  border-radius: 50%;
+  animation: spin 1s infinite linear;
+}
+
+@keyframes loadingAnimation {
+  0% {
+      content: ".";
+  }
+  20% {
+      content: "..";
+  }
+  40% {
+      content: "...";
+  }
+  60% {
+    content: "....";
+}
+  80% {
+      content: "...";
+  }
+  100% {
+    content: "..";
+  }
+}
+
+.coming-soon::after {
+  content: ".";
+  animation: loadingAnimation 4s infinite;
+}
