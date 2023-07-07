@@ -73,16 +73,24 @@ nav ul li a:hover {
 
 
 .container {
-  justify-items: center;
-  color: white;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  margin-top: 1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   gap: 3rem;
-  width: 100%;
   padding-left: 3rem;
   padding-right: 3rem;
+  width: 100%;
   overflow: hidden;
+  box-sizing: border-box;
 }
+
+.container .Item {
+  width: calc(33.33% - 2rem); /* Adjust the width based on your desired layout */
+}
+
+
 
 .Item {
   background-color: #313131;
@@ -140,6 +148,7 @@ nav ul li a:hover {
 
 
 .projImg {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -167,7 +176,7 @@ nav ul li a:hover {
   color: whitesmoke;
   z-index: 1;
   top: 50%;
-  transform: translateY(-220px);
+  transform: translateY(-300px);
 }
 
 .projImg .intro-content .txt-rotate {
@@ -239,43 +248,17 @@ nav ul li a:hover {
 }
 
 
-
-
-.about {
-  font-size: 100px;
-  color: white;
-  text-align: center;
-  position: absolute;
-  display: block;
-  margin-top: 2000px;
-  padding-top: 100px;
-  padding-bottom: 400px;
-  width: 100%;
-}
-
-.about p {
-  font-size: 35px;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
 .projects {
   font-size: 100px;
   color: white;
   text-align: center;
   position: absolute;
   display: block;
-  margin-top: 4000px;
+  margin-top: 115%;
   padding-top: 100px;
   padding-bottom: 400px;
   margin-bottom: 400px;
   width: 100%;
-}
-
-.projects p {
-  font-size: 35px;
-  padding-left: 30px;
-  padding-right: 30px;
 }
 
 .blog {
@@ -303,3 +286,19 @@ nav ul li a:hover {
   margin-bottom: 400px;
   width: 100%;
 }
+
+.line {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 100vh;
+  background-color: #ffffff;
+}
+
+.Item .popup-content {
+  display: none;
+  /* Add more styles as needed */
+}
+
