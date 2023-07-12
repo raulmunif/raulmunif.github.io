@@ -21,6 +21,11 @@
         </nav>
     </div>
 
+    <div id="banner" class="banner">
+        <span class="banner-text">This webiste is still under production! I hope to finish it soon.</span>
+        <span class="close-button" onclick="closeBanner()">Close</span>
+    </div>
+
     <div id="Home"></div>
 
     <div class="projImg" id="projImg">
@@ -162,5 +167,14 @@
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script type="text/javascript" src="script.js"></script>
+
+    <script>
+        // JavaScript code for the banner
+        function closeBanner() {
+            var banner = document.getElementById('banner');
+            banner.style.display = 'none';
+        }
+    </script>
+
 </body>
 </html>
