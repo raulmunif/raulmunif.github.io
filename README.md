@@ -58,6 +58,11 @@ yarn build
 
 The built files will be in the `dist` directory.
 
+## Deployment
+
+This project is set up for deployment on [Render](https://render.com) using Docker.
+
+
 ## License
 
 MIT

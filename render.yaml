@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: portfolio
+    env: docker
+    repo: https://github.com/raulmunif/raulmunif.github.io
+    branch: main
+    buildCommand: docker build -t portfolio .
+    startCommand: docker run -p 80:80 portfolio
+    healthCheckPath: /
+    envVars:
+      - key: NODE_ENV
+        value: production
+    autoDeploy: true
