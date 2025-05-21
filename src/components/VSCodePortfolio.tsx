@@ -18,7 +18,8 @@ const VSCodePortfolio: React.FC = () => {
 
   const [activeContent, setActiveContent] = useState('readme');
   const [openTabs, setOpenTabs] = useState(['README.md']);
-  const [isMobile, setIsMobile] = useState(false);
+  // We still need setIsMobile for the useEffect, but we can mark isMobile as unused
+  const [, setIsMobile] = useState(false);
   const [showSidebar, setShowSidebar] = useState(true);
 
   useEffect(() => {
@@ -89,14 +90,13 @@ const VSCodePortfolio: React.FC = () => {
           />
         )}
         
-        <MainContent 
+        <MainContent
           activeTab={activeTab}
           activeContent={activeContent}
           openTabs={openTabs}
           handleFileClick={handleFileClick}
           closeTab={closeTab}
           toggleSidebar={toggleSidebar}
-          isMobile={isMobile}
         />
       </div>
       

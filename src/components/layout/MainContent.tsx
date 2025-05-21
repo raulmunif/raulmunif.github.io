@@ -15,7 +15,6 @@ interface MainContentProps {
   handleFileClick: (file: string, content: string) => void;
   closeTab: (tab: string, e: React.MouseEvent) => void;
   toggleSidebar: () => void;
-  isMobile: boolean;
 }
 
 const MainContent: React.FC<MainContentProps> = ({
@@ -24,9 +23,8 @@ const MainContent: React.FC<MainContentProps> = ({
   openTabs,
   handleFileClick,
   closeTab,
-  toggleSidebar,
-  // isMobile is used for responsive design decisions
-  isMobile
+  toggleSidebar
+  // Removed unused isMobile parameter
 }) => {
   return (
     <div className="flex-1 flex flex-col overflow-hidden">
