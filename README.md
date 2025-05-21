@@ -65,5 +65,5 @@ MIT
 ## Contact
 
 - Email: raulmunif34@gmail.com
-- LinkedIn: [linkedin.com/in/raul](https://linkedin.com/in/raul)
-- GitHub: [github.com/raul](https://github.com/raul)
+- LinkedIn: [linkedin.com/in/raul-munif](https://www.linkedin.com/in/raul-munif/)
+- GitHub: [github.com/raulmunif](https://github.com/raulmunif)

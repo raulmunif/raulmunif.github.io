@@ -245,7 +245,7 @@ const VSCodePortfolio = () => {
               <div className="max-w-3xl mx-auto">
                 <h1 className="text-3xl font-bold text-blue-400 mb-6">Raul Munif</h1>
                 <p className="text-lg mb-4">👋 Welcome to my portfolio!</p>
-                <p className="mb-4">I'm a Computer Science and Commerce (Finance) student at UNSW Sydney with experience in full-stack development.</p>
+                <p className="mb-4">I'm a Computer Science and Commerce student at UNSW Sydney with experience in full-stack development.</p>
                 <p className="mb-6">Navigate through the folders on the left to explore my experience, projects, skills, and more.</p>
                 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
@@ -279,7 +279,7 @@ const VSCodePortfolio = () => {
               <div className="max-w-3xl mx-auto">
                 <h1 className="text-3xl font-bold text-yellow-400 mb-6">About Me</h1>
                 <div className="bg-gray-800 p-6 rounded-lg mb-6">
-                  <p className="mb-4">I'm a Bachelor of Computer Science and Commerce (Finance) student at the University of New South Wales, Sydney.</p>
+                  <p className="mb-4">I'm a Bachelor of Computer Science and Commerce student at the University of New South Wales, Sydney.</p>
                   <p className="mb-4">I'm passionate about software development, particularly web applications and data-driven solutions. My combined background in computer science and finance gives me a unique perspective on building technology solutions with business value in mind.</p>
                   <p>When I'm not coding, I'm teaching others as a private tutor, participating in programming competitions, or working on personal projects to expand my skills.</p>
                 </div>
@@ -428,7 +428,7 @@ const VSCodePortfolio = () => {
                     <h2 className="text-xl font-semibold">University of New South Wales Sydney</h2>
                     <span className="text-gray-400 text-sm">Feb. 2022 – Nov 2025</span>
                   </div>
-                  <p className="text-lg text-gray-300 mb-4">Bachelor of Computer Science and Commerce (Finance)</p>
+                  <p className="text-lg text-gray-300 mb-4">Bachelor of Computer Science and Commerce </p>
                   
                   <h3 className="text-lg font-semibold mt-6 mb-3">Extracurricular Activities</h3>
                   <div className="space-y-4">
@@ -472,7 +472,7 @@ const VSCodePortfolio = () => {
                       </div>
                     </a>
                     
-                    <a href="https://linkedin.com/in/raul" target="_blank" rel="noopener noreferrer" className="flex items-center p-4 bg-gray-700 rounded-lg hover:bg-gray-600 transition-colors">
+                    <a href="https://www.linkedin.com/in/raul-munif/" target="_blank" rel="noopener noreferrer" className="flex items-center p-4 bg-gray-700 rounded-lg hover:bg-gray-600 transition-colors">
                       <Linkedin className="h-6 w-6 text-blue-400 mr-4" />
                       <div>
                         <p className="font-medium">LinkedIn</p>
@@ -480,7 +480,7 @@ const VSCodePortfolio = () => {
                       </div>
                     </a>
                     
-                    <a href="https://github.com/raul" target="_blank" rel="noopener noreferrer" className="flex items-center p-4 bg-gray-700 rounded-lg hover:bg-gray-600 transition-colors">
+                    <a href="https://github.com/raulmunif" target="_blank" rel="noopener noreferrer" className="flex items-center p-4 bg-gray-700 rounded-lg hover:bg-gray-600 transition-colors">
                       <Github className="h-6 w-6 text-purple-400 mr-4" />
                       <div>
                         <p className="font-medium">GitHub</p>

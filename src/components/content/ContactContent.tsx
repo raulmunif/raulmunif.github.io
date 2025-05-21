@@ -27,7 +27,7 @@ const ContactContent: React.FC = () => {
             </div>
           </a>
           
-          <a href="https://linkedin.com/in/raul" target="_blank" rel="noopener noreferrer" className="flex items-center p-4 bg-gray-700 rounded-lg hover:bg-gray-600 transition-colors">
+          <a href="https://www.linkedin.com/in/raul-munif/" target="_blank" rel="noopener noreferrer" className="flex items-center p-4 bg-gray-700 rounded-lg hover:bg-gray-600 transition-colors">
             <Linkedin className="h-6 w-6 text-blue-400 mr-4" />
             <div>
               <p className="font-medium">LinkedIn</p>
@@ -35,7 +35,7 @@ const ContactContent: React.FC = () => {
             </div>
           </a>
           
-          <a href="https://github.com/raul" target="_blank" rel="noopener noreferrer" className="flex items-center p-4 bg-gray-700 rounded-lg hover:bg-gray-600 transition-colors">
+          <a href="https://github.com/raulmunif" target="_blank" rel="noopener noreferrer" className="flex items-center p-4 bg-gray-700 rounded-lg hover:bg-gray-600 transition-colors">
             <Github className="h-6 w-6 text-purple-400 mr-4" />
             <div>
               <p className="font-medium">GitHub</p>

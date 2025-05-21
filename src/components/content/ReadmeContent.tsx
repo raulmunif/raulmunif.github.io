@@ -6,7 +6,7 @@ const ReadmeContent: React.FC = () => {
     <div className="max-w-3xl mx-auto">
       <h1 className="text-3xl font-bold text-blue-400 mb-6">Raul Munif</h1>
       <p className="text-lg mb-4">👋 Welcome to my portfolio!</p>
-      <p className="mb-4">I'm a Computer Science and Commerce (Finance) student at UNSW Sydney with experience in full-stack development.</p>
+      <p className="mb-4">I'm a Computer Science and Commerce student at UNSW Sydney with experience in full-stack development.</p>
       <p className="mb-6">Navigate through the folders on the left to explore my experience, projects, skills, and more.</p>
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">

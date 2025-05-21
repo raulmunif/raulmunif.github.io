@@ -5,7 +5,7 @@ const AboutContent: React.FC = () => {
     <div className="max-w-3xl mx-auto">
       <h1 className="text-3xl font-bold text-yellow-400 mb-6">About Me</h1>
       <div className="bg-gray-800 p-6 rounded-lg mb-6">
-        <p className="mb-4">I'm a Bachelor of Computer Science and Commerce (Finance) student at the University of New South Wales, Sydney.</p>
+        <p className="mb-4">I'm a Bachelor of Computer Science and Commerce student at the University of New South Wales, Sydney.</p>
         <p className="mb-4">I'm passionate about software development, particularly web applications and data-driven solutions. My combined background in computer science and finance gives me a unique perspective on building technology solutions with business value in mind.</p>
         <p>When I'm not coding, I'm teaching others as a private tutor, participating in programming competitions, or working on personal projects to expand my skills.</p>
       </div>

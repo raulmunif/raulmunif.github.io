@@ -10,7 +10,7 @@ const EducationContent: React.FC = () => {
           <h2 className="text-xl font-semibold">University of New South Wales Sydney</h2>
           <span className="text-gray-400 text-sm">Feb. 2022 – Nov 2025</span>
         </div>
-        <p className="text-lg text-gray-300 mb-4">Bachelor of Computer Science and Commerce (Finance)</p>
+        <p className="text-lg text-gray-300 mb-4">Bachelor of Computer Science and Commerce </p>
         
         <h3 className="text-lg font-semibold mt-6 mb-3">Extracurricular Activities</h3>
         <div className="space-y-4">
