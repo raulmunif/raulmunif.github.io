@@ -5,7 +5,7 @@ import MainContent from './layout/MainContent';
 import StatusBar from './layout/StatusBar';
 
 const VSCodePortfolio: React.FC = () => {
-  const [activeTab, setActiveTab] = useState('README.md');
+  const [activeTab, setActiveTab] = useState('Terminal');
   const [expandedFolders, setExpandedFolders] = useState({
     'src': true,
     'about': true,
@@ -16,8 +16,8 @@ const VSCodePortfolio: React.FC = () => {
     'contact': false
   });
 
-  const [activeContent, setActiveContent] = useState('readme');
-  const [openTabs, setOpenTabs] = useState(['README.md']);
+  const [activeContent, setActiveContent] = useState('terminal');
+  const [openTabs, setOpenTabs] = useState(['README.md', 'Terminal']);
   // We still need setIsMobile for the useEffect, but we can mark isMobile as unused
   const [, setIsMobile] = useState(false);
   const [showSidebar, setShowSidebar] = useState(true);
@@ -45,16 +45,25 @@ const VSCodePortfolio: React.FC = () => {
     }));
   };
 
-  const handleFileClick = (file: string, content: string) => {
-    setActiveTab(file);
-    setActiveContent(content);
+  const handleFileClick = (file: string, content?: string) => {
     if (!openTabs.includes(file)) {
       setOpenTabs([...openTabs, file]);
+    }
+    setActiveTab(file);
+    if (content) {
+      setActiveContent(content);
+    } else if (file === 'Terminal') {
+      setActiveContent('terminal'); // Specific handling for Terminal
+    } else {
+      setActiveContent(file.replace('.jsx', '').replace('.md', '').toLowerCase());
     }
   };
 
   const closeTab = (tab: string, e: React.MouseEvent) => {
     e.stopPropagation();
+    if (tab === 'Terminal') { // Prevent closing the Terminal tab
+      return;
+    }
     const tabIndex = openTabs.indexOf(tab);
     const newTabs = openTabs.filter(t => t !== tab);
     setOpenTabs(newTabs);
