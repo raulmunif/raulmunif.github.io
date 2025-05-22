@@ -40,12 +40,12 @@ const MainContent: React.FC<MainContentProps> = ({
         {openTabs.map(tab => (
           <div 
             key={tab} 
-            className={`flex items-center px-4 py-2 border-r border-gray-700 cursor-pointer ${activeTab === tab ? 'bg-gray-900 text-white' : 'bg-gray-800 text-gray-400'}`}
+            className={`flex items-center px-4 py-2 border-r border-gray-700 cursor-pointer ${activeTab === tab ? 'bg-gray-700 text-white' : 'bg-slate-700 text-gray-400 hover:bg-slate-600 hover:text-gray-100'}`}
             onClick={() => handleFileClick(tab, tab.replace('.jsx', '').replace('.md', '').toLowerCase())}
           >
             <span className="text-sm mr-2">{tab}</span>
             <X 
-              className="h-4 w-4 text-gray-500 hover:text-white" 
+              className={`h-4 w-4 ${activeTab === tab ? 'text-gray-300' : 'text-gray-600'} hover:text-white hover:bg-gray-500 rounded-sm p-0.5`}
               onClick={(e) => closeTab(tab, e)}
             />
           </div>
