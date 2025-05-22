@@ -30,11 +30,12 @@ const BottomTerminal: React.FC<BottomTerminalProps> = ({
   const terminalContentRef = useRef<HTMLDivElement>(null);
 
   const ohMyZshStyleAscii = `
-  ____  _   _ ____  _     ___ ____ ____  
- / __ \| | | |  _ \| |   |_ _|___ \___ \ 
-| |  | | | | | |_) | |    | | __) |__) |
-| |  | | |_| |  __/| |___ | |/ __/ __/  
- \__\_\\___/|_|   |_____|___|_____|_____|
+    ____     ___    __  __    __             __          _____ _       __    ______
+   / __ \   /   |  / / / /   / /            / /         / ___/| |     / /   / ____/
+  / /_/ /  / /| | / / / /   / /            / /          \__ \ | | /| / /   / __/   
+ / _, _/  / ___ |/ /_/ /   / /___         / /          ___/ / | |/ |/ /   / /___   
+/_/ |_|  /_/  |_|\____/   /_____/        / /          /____/  |__/|__/   /_____/   
+                                        /_/                                        
   `;
   const welcomeMessage = "Welcome to Raul's VSCode Portfolio Terminal!";
 
