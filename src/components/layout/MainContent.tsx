@@ -7,6 +7,7 @@ import ProjectsContent from '../content/ProjectsContent';
 import SkillsContent from '../content/SkillsContent';
 import EducationContent from '../content/EducationContent';
 import ContactContent from '../content/ContactContent';
+import TerminalContent from '../content/TerminalContent';
 
 interface MainContentProps {
   activeTab: string;
@@ -61,6 +62,7 @@ const MainContent: React.FC<MainContentProps> = ({
         {activeContent === 'skills' && <SkillsContent />}
         {activeContent === 'education' && <EducationContent />}
         {activeContent === 'contact' && <ContactContent />}
+        {activeContent === 'terminal' && <TerminalContent />}
       </div>
     </div>
   );
