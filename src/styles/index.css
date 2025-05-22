@@ -16,3 +16,48 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.rainbow-text {
+  background-image: linear-gradient(to right, #ff00ff, #00ffff, #00ff00, #ffff00, #ff0000); /* Example vibrant rainbow */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 1.2em; /* Make it a bit larger */
+  font-weight: bold;
+  display: inline-block; /* Important for background-clip to work as expected */
+}
+
+/* Ensure html and body take full height if not already set, and #root too */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+/* Prevent main content scroll from interfering or being overlapped by fixed terminal */
+/* This will be handled by adjusting the main content container's height in VSCodePortfolio.tsx later */
+
+/* Custom Scrollbar for Webkit browsers (Chrome, Safari, Edge) */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+  height: 8px; /* Height of the scrollbar for horizontal scroll */
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #2d2d2d; /* Background of the scrollbar track (darker) */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #555; /* Color of the scrollbar thumb */
+  border-radius: 4px; /* Rounded corners for the thumb */
+  border: 2px solid #2d2d2d; /* Creates padding around thumb */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: #666; /* Color of the thumb on hover */
+}
+
+/* For Firefox */
+.custom-scrollbar {
+  scrollbar-width: thin; /* "auto" or "thin" */
+  scrollbar-color: #555 #2d2d2d; /* thumb and track color */
+}
