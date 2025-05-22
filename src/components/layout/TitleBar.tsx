@@ -8,10 +8,16 @@ const TitleBar: React.FC = () => {
         <Code className="h-5 w-5 text-blue-500" />
         <span className="text-sm">Raul Munif - Portfolio</span>
       </div>
-      <div className="flex space-x-4">
-        <Minus className="h-4 w-4 text-gray-400 hover:text-white cursor-pointer" />
-        <Maximize2 className="h-4 w-4 text-gray-400 hover:text-white cursor-pointer" />
-        <X className="h-4 w-4 text-gray-400 hover:text-white cursor-pointer" />
+      <div className="flex items-center space-x-1"> {/* Reduced space-x for tighter grouping with padding */}
+        <div className="p-1.5 rounded-sm hover:bg-gray-700">
+          <Minus className="h-4 w-4 text-gray-400 hover:text-white cursor-pointer" />
+        </div>
+        <div className="p-1.5 rounded-sm hover:bg-gray-700">
+          <Maximize2 className="h-4 w-4 text-gray-400 hover:text-white cursor-pointer" />
+        </div>
+        <div className="p-1.5 rounded-sm hover:bg-red-500">
+          <X className="h-4 w-4 text-gray-400 hover:text-white cursor-pointer" />
+        </div>
       </div>
     </div>
   );
